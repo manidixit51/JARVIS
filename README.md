@@ -1,4 +1,4 @@
-# Jarvis AI Chatbot
+# JARVIS AI Chatbot
 
 Welcome to Jarvis, an AI chatbot project that leverages speech recognition in Python to provide an interactive and intelligent conversational experience. This README provides an overview of the project, installation instructions, and usage guidelines.
 
