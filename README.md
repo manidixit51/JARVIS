@@ -1,77 +1,67 @@
-# JARVIS AI Chatbot
+# **Jarvis - AI Voice Assistant**
 
-Welcome to Jarvis, an AI chatbot project that leverages speech recognition in Python to provide an interactive and intelligent conversational experience. This README provides an overview of the project, installation instructions, and usage guidelines.
+## **Project Overview**
+Jarvis is an AI-powered voice assistant built in Python. It uses speech recognition to understand spoken commands and responds with appropriate actions through text-to-speech. The project aims to create a personalized assistant capable of handling various tasks through voice interaction.
 
-## Table of Contents
+## **Features**
+- **Speech Recognition:** Converts spoken language into text using the `SpeechRecognition` library.
+- **Command Processing:** Responds to user commands such as greetings, queries, and tasks.
+- **Text-to-Speech (TTS):** Provides audio feedback using the `gtts` (Google Text-to-Speech) library.
+- **Modular Design:** Easily extendable to add new features and commands.
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## **Installation**
+### **Prerequisites**
+- Python 3.x
+- `pip` (Python package installer)
 
-## Features
-
-- Speech recognition for voice input
-- Natural language processing for understanding user queries
-- Customizable responses and functionalities
-- Easy-to-extend architecture for additional features
-
-## Requirements
-
-- Python 3.6 or later
-- `speech_recognition` library
-- `pyaudio` library
-- `nltk` library (for natural language processing)
-- Optional: `gtts` for text-to-speech
-
-## Installation
-
+### **Steps**
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/manidixit51/jarvis.git
+   ```
+2. Navigate to the project directory:
+   ```bash
    cd jarvis
    ```
-
-2. Create a virtual environment and activate it:
-
+3. Create a virtual environment:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   python -m venv jarvis_env
    ```
-
-3. Install the required packages:
-
+4. Activate the virtual environment:
+   - **Windows:** `.\jarvis_env\Scripts\activate`
+   - **macOS/Linux:** `source jarvis_env/bin/activate`
+5. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
-
-1. Start the chatbot:
-
+## **Usage**
+1. Run the main script:
    ```bash
-   python jarvis.py
+   python src/main.py
    ```
+2. Speak into your microphone when prompted, and Jarvis will respond accordingly.
 
-2. Follow the on-screen instructions to interact with Jarvis.
+## **Project Structure**
+```plaintext
+├── src/
+│   ├── main.py          # Entry point of the application
+│   ├── speech_recognizer.py  # Handles speech recognition
+│   ├── command_processor.py  # Processes recognized commands
+│   ├── text_to_speech.py     # Handles text-to-speech conversion
+├── tests/              # Unit tests
+├── docs/               # Documentation
+├── requirements.txt    # Project dependencies
+└── README.md           # Project overview and setup instructions
+```
 
-3. To add new features or modify existing ones, edit the `jarvis.py` file or create new modules as needed.
+## **Contributing**
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-## Contributing
+## **Acknowledgments**
+- Inspiration from various AI assistants and Python open-source projects.
+- Libraries used: `SpeechRecognition`, `gtts`, `playsound`, `PyAudio`.
 
-Contributions are welcome! If you'd like to contribute to the Jarvis project, please follow these steps:
+---
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a pull request.
-
-Please ensure that your code adheres to the existing style and includes appropriate tests.
-
-
-Feel free to customize this template based on your specific needs and project structure!
+You can modify the structure, features, and other details as per your project’s specifics.
