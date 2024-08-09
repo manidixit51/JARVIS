@@ -64,4 +64,4 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ---
 
-You can modify the structure, features, and other details as per your project’s specifics.
+
