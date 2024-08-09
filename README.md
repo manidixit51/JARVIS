@@ -1,4 +1,4 @@
-# **Jarvis - AI Voice Assistant**
+# **JARVIS - AI Voice Assistant**
 
 ## **Project Overview**
 Jarvis is an AI-powered voice assistant built in Python. It uses speech recognition to understand spoken commands and responds with appropriate actions through text-to-speech. The project aims to create a personalized assistant capable of handling various tasks through voice interaction.
